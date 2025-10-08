@@ -1,5 +1,4 @@
 from pydantic import BaseModel
-from typing import Literal
 
 class AskRequest(BaseModel):
     company_name: str
@@ -7,4 +6,4 @@ class AskRequest(BaseModel):
 
 class AskResponse(BaseModel):
     answer: str
-    #source: Literal["financial", "news"]
+
